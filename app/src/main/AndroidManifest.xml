@@ -18,6 +18,11 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/random_number_widget_info" />
         </receiver>
+        
+        <service android:name="com.fozimat.widgets.UpdateWidgetService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>

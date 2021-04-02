@@ -27,7 +27,7 @@ class RandomNumberWidget : AppWidgetProvider() {
 
 internal fun updateAppWidget(context: Context, appWidgetManager: AppWidgetManager, appWidgetId: Int) {
     // Construct the RemoteViews object
-    val views = RemoteViews(context.packageName, R.layout.random_number_widget)
+    val views = RemoteViews(context.packageName, R.layout.random_numbers_widget)
     val lastUpdate = "Random: " + NumberGenerator.generate(100)
     views.setTextViewText(R.id.appwidget_text, lastUpdate)
 
